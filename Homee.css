@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial Narrow";
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+body {
+    background: #ffffff;
+}
+.nav-bar {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px lightslategray;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    flex: 1;
+    font-size: 40px;
+    padding: 20px;
+    margin-left: 50px;
+    font-family: Satisfy;
+}
+
+ul.menu {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.menu li {
+    flex: 1;
+    list-style-type: none;
+    font-size: 16px;
+    font-family: "Barlow Condensed";
+    text-align: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.menu li a:hover {
+    color: midnightblue;
+    text-decoration: underline;
+}
+
+
+.Me {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.photo {
+    flex: 0 0 32%;
+    border-radius: 50%;
+    margin-right: 5%;
+    width: 40%;
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+.text {
+    flex: 1;
+    margin-top: 6%;
+  font-size: 180%;
+    margin-left: 3%;
+}
+
+@media only screen and (max-width:768px) {
+    .menu {
+        flex-wrap: wrap;
+    }
+    .menu a {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .Me {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .photo {
+        margin-top: 0;
+        margin-bottom: 20px;
+        align-self: center;
+    }
+    .text {
+        margin-top: 0;
+        text-align: center;
+    }
+}
